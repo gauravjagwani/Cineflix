@@ -1,0 +1,26 @@
+@import "../../mixins.scss";
+
+.video-title-container {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  align-items: center;
+  font-weight: 600;
+  font-size: larger;
+  padding: 0 400px;
+  position: absolute;
+  color: white;
+  z-index: 25;
+  @include md {
+    height: 400px;
+  }
+}
+
+.movie-title {
+  margin-bottom: 30px;
+}
+
+.movie-overview {
+  width: 50%;
+  font-weight: 200;
+  opacity: 0.6;
+}
