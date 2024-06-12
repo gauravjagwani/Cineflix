@@ -1,0 +1,44 @@
+@import "../../mixins.scss";
+
+.cineflix-ai-page {
+  min-height: 700px;
+  padding-top: 100px;
+  color: white;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .form {
+    // padding: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* One fraction for input, auto for button */
+    gap: 2px; /* Gap between input and button */
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    // position: relative;
+  }
+  .ai-searchbar {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 3px; /* Rounded corners for input */
+
+    // position: relative;
+  }
+  .search-btn {
+    background-color: #2a0163;
+    cursor: pointer; /* Dark gray background for button */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default button border */
+    border-radius: 3px; /* Rounded corners for button */
+    /* Change cursor to pointer on hover */
+  }
+  .emptysearch {
+    font-size: 24px;
+    color: var(--black-light);
+  }
+}

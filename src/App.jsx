@@ -13,6 +13,7 @@ import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
 import PageNotFound from "./pages/404/PageNotFound";
+import CineflixAI from "./pages/cineflix-ai/CineflixAI";
 
 function App() {
   const dispatch = useDispatch();
@@ -66,6 +67,7 @@ function App() {
         // <Route path="/:mediaType/:id" element={<Details />} />
         // <Route path="/search/:query" element={<SearchResult />} />
         // <Route path="/explore/:mediaType" element={<Explore />} />
+        // <Route path="/cineflix/ai" element={<CineflixAI />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

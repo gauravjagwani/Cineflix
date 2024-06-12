@@ -1,6 +1,6 @@
 @import "../../mixins.scss";
 .carousel {
-  margin-top: 90px;
+  margin-top: 50px;
   margin-bottom: 50px;
   z-index: 1000;
   .contentWrapper {
@@ -80,6 +80,7 @@
   }
   .carouselItems {
     display: flex;
+    // border: 1px solid white;
     gap: 10px;
     overflow-y: hidden;
     margin-right: -20px;

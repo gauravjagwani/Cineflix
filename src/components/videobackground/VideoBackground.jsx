@@ -18,8 +18,8 @@ const VideoBackground = ({ movieId }) => {
   const { data, loading } = useFetch(`/movie/${movieId}/videos?language=en-US`);
 
   const key =
-    data?.results.length > 0 ? data?.results[1].key : data?.results[0].key;
-  console.log(key);
+    data?.results?.length > 0 ? data?.results[1]?.key : data?.results[0]?.key;
+  // console.log(key);
 
   return (
     <div className="video-bg">

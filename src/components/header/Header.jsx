@@ -69,6 +69,10 @@ const Header = () => {
     }
     setMobileMenu(false);
   };
+  const ainavigation = () => {
+    navigate("/cineflix/ai");
+    setMobileMenu(false);
+  };
 
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
@@ -82,6 +86,9 @@ const Header = () => {
           </li>
           <li className="menuItem" onClick={() => navigationHandler("tv")}>
             TV Shows
+          </li>
+          <li className="menuItem" onClick={ainavigation}>
+            CineFlix AI
           </li>
           <li className="menuItem">
             <HiOutlineSearch onClick={openSearch} />
